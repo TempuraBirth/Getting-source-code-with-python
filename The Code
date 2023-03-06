@@ -1,0 +1,6 @@
+from urllib import request
+
+response = request.urlopen("example.com")
+
+page_source = response.read().decode('utf-8')
+print(page_source)
